@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<style xmlns="http://purl.org/net/xbiblio/csl" version="1.0" class="in-text" demote-non-dropping-particle="never">
+  <info>
+    <title>Journal of Forest Science</title>
+    <id>http://www.zf.journals/journal-of-forest-science</id>
+    <link href="https://www.citationstyles.org/" rel="self"/>
+    <author>
+      <name>Custom Style Generator</name>
+    </author>
+    <category citation-format="author-date"/>
+    <category field="biology"/>
+    <updated>2025-12-01T00:00:00+00:00</updated>
+    <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
+  </info>
+
+  <!-- Locale for terms -->
+  <locale xml:lang="en">
+    <terms>
+      <term name="et-al">et al.</term>
+    </terms>
+  </locale>
+
+  <!-- Citation layout -->
+  <citation>
+    <sort>
+      <key variable="author"/>
+      <key variable="issued"/>
+    </sort>
+    <layout prefix="(" suffix=")" delimiter="; ">
+      <group delimiter=", ">
+        <names variable="author">
+          <name form="short" and="symbol" delimiter=", " initialize-with="."/>
+          <label form="short" prefix=" " strip-periods="true"/>
+        </names>
+        <date variable="issued">
+          <date-part name="year"/>
+        </date>
+      </group>
+    </layout>
+  </citation>
+
+  <!-- Bibliography layout -->
+  <bibliography hanging-indent="false" line-spacing="2" entry-spacing="1">
+    <sort>
+      <key variable="author"/>
+      <key variable="issued"/>
+    </sort>
+    <layout suffix="." delimiter=". ">
+      <names variable="author">
+        <name name-as-sort-order="first" and="symbol" delimiter=", " initialize-with="."/>
+      </names>
+      <date variable="issued">
+        <date-part name="year"/>
+      </date>
+      <text variable="title" font-style="italic"/>
+      <text variable="container-title"/>
+      <text variable="volume"/>
+      <text variable="page"/>
+      <text variable="DOI" prefix="doi:"/>
+    </layout>
+  </bibliography>
+</style>
